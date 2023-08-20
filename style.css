@@ -1,0 +1,283 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    background-image: url(jkplaces.jpeg);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+.menu-bar{
+    background-color: orange;
+    text-align: center;
+    width: 1000px;
+    margin-left: 500px;
+    margin-top: 50px;
+    border-radius: 70px;
+}
+
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: white;
+}
+
+.menu-bar ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+    height: 20px;
+    border-radius: 70px;
+    color: #777;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: color 0.5s;
+}
+
+.menu-bar ul li a{
+    text-decoration: none;
+    color: white; 
+}
+
+.menu-bar ul li::after{
+    content: '';
+    background-color: orangered;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0;
+    transition: top 0.5s, opacity 0.5s;
+}
+
+.menu-bar ul li:hover{
+    color: #fff;
+}
+.menu-bar ul li:hover::after{
+    top: 50%;
+    opacity: 1;
+}
+
+.active{
+    background-color: orangered;
+}
+
+.sub-menu{
+    display:none;
+}
+
+.menu-bar ul li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    background-color: orange;
+    margin-top: 17px;
+    margin-left: -15px;
+    border-radius: 10px;
+}
+
+.menu-bar ul li:hover .sub-menu ul{
+    display: block;
+    margin: 10px;
+}
+
+p{
+    color: black;
+}
+
+.container{
+    /*background-color: rgb(233, 144, 85);*/
+    width: 1982px;
+    height: 654px;
+    display: flex;
+    align-items: start;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.7em;
+    /*border: 20px solid rgb(233, 144, 85);*/
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 0.1vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+
+.culture{
+    width: 150px; 
+    height: 300px;
+    background-color: skyblue;
+    border: 3px solid blue;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: justify;
+    transition: transform .8s;
+    font-size: 0.56em;
+}
+
+.climate{
+    width: 150px; 
+    height: 300px;
+    background-color: pink;
+    border: 3px solid rgb(237, 72, 100);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform .8s;
+    font-size: 0.56em;
+    text-align: justify;
+}
+
+.places{
+    width: 150px; 
+    height: 300px;
+    background-color: orange;
+    border: 3px solid crimson;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform .8s;
+    font-size: 0.56em;
+    text-align: justify;
+}
+
+.cuisine{
+    width: 150px; 
+    height: 300px;
+    background-color: greenyellow;
+    border: 3px solid green;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform .8s;
+    font-size: 0.56em;
+    text-align: justify;
+}
+
+.culture:hover{
+    transform: scale(1.7);
+}
+
+.climate:hover{
+    transform: scale(1.7);
+}
+
+.places:hover{
+    transform: scale(1.7);
+}
+
+.cuisine:hover{
+    transform: scale(1.7);
+}
+
+.imgculture{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    margin: -30px;
+}
+
+.imgclimate{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    margin: -20px;
+    margin-top: -35px;
+}
+
+.imgplaces{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    margin: -25px;
+    margin-top: -35px;
+}
+
+.imgcuisine{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    margin: -21px;
+    margin-top: -35px;
+}
+
+.styler1{
+    width: 224px;
+    height: 170px;
+    margin: -37px;
+    margin-top: -10px;
+}
+
+.styler2{
+    width: 224px;
+    height: 170px;
+    margin: -37px;
+    margin-top: -10px;
+}
+
+.styler3{
+    width: 224px;
+    height: 170px;
+    margin: -37px;
+    margin-top: -10px;
+}
+
+.styler4{
+    width: 224px;
+    height: 170px;
+    margin: -37px;
+    margin-top: -30px;
+}
+
+p{
+    font-size: 1.5em;
+}
+
+.imgaboutme{
+    border: 2px solid whitesmoke;
+    border-radius: 4px;
+    padding: 5px;
+    margin: -20px;
+    margin-top: 250px;
+    transition: transform .8s;
+}
+
+.imgaboutme:hover{
+    transform: scale(1.1);
+}
+
+.summary{
+    background-color: rgb(255, 0, 255);
+    border: 5px solid purple;
+    width: 170vh;
+    height: 200px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    display: flex;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.3em;
+    text-align: justify;
+
+}
+.imgsum{
+    border: 2px solid whitesmoke;
+    border-radius: 4px;
+    padding: 5px;
+    transition: transform .8s;
+}
+
+.sum{
+    font-size: 1.3em;
+}
